@@ -1,0 +1,12 @@
+.imgWrapper {
+    width: 100%;
+}
+
+@media screen and (min-width: 100px) and (max-width: 700px) {
+    .imgWrapper{
+        display: none;
+    }
+    .left{
+        display: none;
+    }
+}

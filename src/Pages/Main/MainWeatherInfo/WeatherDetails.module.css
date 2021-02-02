@@ -1,0 +1,34 @@
+.darkenBg {
+    border-radius: 0 25px 25px 0;
+}
+
+.darkenBg:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 0 25px 25px 0;
+    z-index: -100;
+}
+
+@media (max-width: 990px) {
+    .darkenBg {
+        border-radius: 25px 25px 0 0;
+    }
+
+    .darkenBg:before {
+        border-radius: 25px 25px 0 0;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .darkenBg {
+        border-radius: 0;
+    }
+
+    .darkenBg:before {
+        border-radius: 0;
+    }
+}

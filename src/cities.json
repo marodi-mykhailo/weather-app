@@ -1,0 +1,72 @@
+[
+  {
+    "id": 703448,
+    "name": "Kyiv",
+    "country": "UA"
+  },
+  {
+    "id": 6942553,
+    "name": "Paris",
+    "country": "CA"
+  },
+  {
+    "id": 1850147,
+    "name": "Tokyo",
+    "country": "JP"
+  },
+  {
+    "id": 756135,
+    "name": "Warsaw",
+    "country": "PL"
+  },
+  {
+    "id": 5128638,
+    "name": "New York",
+    "country": "US"
+  },
+  {
+    "id": 2935022,
+    "name": "Dresden",
+    "country": "DE"
+  },
+  {
+    "id": 3067696,
+    "name": "Prague",
+    "country": "CZ"
+  },
+  {
+    "id": 3088171,
+    "name": "Poznań",
+    "country": "PL"
+  },
+  {
+    "id": 3054638,
+    "name": "Budapest",
+    "country": "HU"
+  },
+  {
+    "id": 2950158,
+    "name": "Berlin",
+    "country": "DE"
+  },
+  {
+    "id": 2643743,
+    "name": "London",
+    "country": "GB"
+  },
+  {
+    "id": 2759794,
+    "name": "Amsterdam",
+    "country": "NL"
+  },
+  {
+    "id": 2072525,
+    "name": "Dublin",
+    "country": "AU"
+  },
+  {
+    "id": 524894,
+    "name": "Moscow",
+    "country": "RU"
+  }
+]

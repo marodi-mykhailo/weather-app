@@ -1,0 +1,37 @@
+.navItem {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navItem:first-child {
+    padding-left: 0;
+}
+
+.navLink {
+    padding: 0 !important;
+    text-align: center;
+    font-size: 18px;
+    color: #6c757d;
+}
+
+.active {
+    position: relative;
+    font-weight: bold;
+    color: black;
+}
+
+.active::before {
+    transform: translateY(300%);
+    text-align: center;
+    border-radius: 100%;
+    position: absolute;
+    background: blue;
+    bottom: 10px;
+    height: 8px;
+    content: '';
+    width: 8px;
+    left: 46%;
+}
+
+
+

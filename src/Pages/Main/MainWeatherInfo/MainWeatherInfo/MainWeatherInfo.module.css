@@ -1,0 +1,24 @@
+.header {
+    background-color: rgba(255, 255, 255, 1);
+    width: max-content;
+    padding-right: 30px;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+.deg {
+    font-size: 28px;
+    position: absolute;
+    top: 30px;
+}
+
+.dot:after {
+    content: '';
+    height: 5px;
+    width: 5px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px;
+}
