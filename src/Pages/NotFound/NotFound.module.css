@@ -1,0 +1,16 @@
+.wrapp {
+    width: 40%;
+    margin: 0 auto;
+    padding: 0 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn a {
+    color: black;
+    text-decoration: none;
+}
+
+.btn:hover a{
+    color: white;
+}

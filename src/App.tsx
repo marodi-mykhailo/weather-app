@@ -9,6 +9,7 @@ import {fetchCityWeatherById} from "./redux/cityWeather.reducer/cityWeather.redu
 import {favoriteCitiesType, fetchFavoriteCitiesTC} from "./redux/favoriteCities.reducer/facoriteCities.reducer";
 import {AppReducerType} from "./redux/app.reducer/app.reducer";
 import LoadingSpinner from "./Components/LoadingSpinner/LoadingSpinner";
+import NotFound from "./Pages/NotFound/NotFound";
 
 function App() {
     const dispatch = useDispatch();
@@ -36,7 +37,7 @@ function App() {
                         : <Route exact path={['/', '/main']} render={() => <Main/>}/>
                     }
                     <Route path={'/login'} render={() => <Login/>}/>
-                    <Route path={'/404'} render={() => <h1 className='text-center p-5'>404 Page not found</h1>}/>
+                    <Route path={'/404'} render={() => <NotFound/>}/>
                     <Redirect from={'*'} to={'/404'}/>
                 </Switch>
             </div>
