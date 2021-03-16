@@ -11,8 +11,8 @@ import {AppReducerType} from "./redux/app.reducer/app.reducer";
 import LoadingSpinner from "./Components/LoadingSpinner/LoadingSpinner";
 
 function App() {
-
     const dispatch = useDispatch();
+
     const favoriteCities = useSelector<AppRootStateType, favoriteCitiesType>(state => state.favoriteCities)
 
     const appStatus = useSelector<AppRootStateType, AppReducerType>(state => state.app)
@@ -33,7 +33,7 @@ function App() {
             <div style={{backgroundColor: "#F2FBFF", borderRadius: "25px"}} className="container">
                 <Switch>
                     {appStatus.isAppLoading === "loading" ? <LoadingSpinner/>
-                        : <Route exact path={['/','/main']} render={() => <Main/>}/>
+                        : <Route exact path={['/', '/main']} render={() => <Main/>}/>
                     }
                     <Route path={'/login'} render={() => <Login/>}/>
                     <Route path={'/404'} render={() => <h1 className='text-center p-5'>404 Page not found</h1>}/>

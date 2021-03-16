@@ -71,7 +71,8 @@ const WeatherStatisticTable = (props: WeatherStatisticTablePropsType) => {
                                disabled={!isActive.first}
                                checked={isShowChart} type="checkbox" className="custom-control-input"
                                id="customSwitch1"/>
-                        <label className={`custom-control-label ${isShowChart && 'font-weight-bold text-dark'}`}
+                        <label className={`custom-control-label ${styles.customInput} 
+                        ${isShowChart && 'font-weight-bold text-dark'}`}
                                htmlFor="customSwitch1">Chart</label>
                     </div>
                 </ul>

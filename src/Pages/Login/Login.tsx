@@ -1,4 +1,4 @@
-import React, {ChangeEvent, FormEvent, useState} from 'react';
+import React, {ChangeEvent, FormEvent, useEffect, useState} from 'react';
 import styles from './Login.module.css'
 import leftImg from '../../assets/img/login-img.svg'
 import {useDispatch, useSelector} from "react-redux";
@@ -14,7 +14,22 @@ export type LoginData = {
 }
 
 const Login = () => {
+
     const dispatch = useDispatch();
+    const isLogged = useSelector<AppRootStateType>(state => state.user.isLogged)
+
+
+    useEffect(() => {
+        let user = localStorage.getItem('user')
+
+        if (user) {
+            dispatch(setUser({email: user}))
+        }
+
+        if (isLogged) {
+            dispatch(initializeAppTC())
+        }
+    }, [dispatch, isLogged])
 
     const [formData, setFormData] = useState<LoginData>({
         email: "",
@@ -39,16 +54,7 @@ const Login = () => {
         setFormData({...formData, isRemember: e.currentTarget.checked})
     }
 
-    const isLogged = useSelector<AppRootStateType>(state => state.user.isLogged)
-
-    let user = localStorage.getItem('user')
-
-    if (user) {
-        dispatch(setUser({email: user}))
-    }
-
     if (isLogged) {
-        dispatch(initializeAppTC())
         return <Redirect to={'/main'}/>
     }
 
@@ -96,7 +102,7 @@ const Login = () => {
                         in
                     </button>
                     <p className="forgot-password text-right">
-                        Forgot <a href="#">password?</a>
+                        Forgot <a href="/reset-password">password?</a>
                     </p>
                 </form>
             </div>

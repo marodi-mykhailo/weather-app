@@ -33,5 +33,13 @@
     left: 46%;
 }
 
+.customInput:after {
+    cursor: pointer;
+}
+
+.customInput:before {
+    cursor: pointer;
+}
+
 
 
