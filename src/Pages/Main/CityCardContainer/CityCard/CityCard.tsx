@@ -30,12 +30,12 @@ export const CityCard = (props: CityCardPropsType) => {
     );
 };
 
-type AddCityCard = {
+type AddCityCardPropsType = {
     onClick: (id: number) => void
     getNewFavoriteCity: (newFavoriteCityData: CityType) => void
 }
 
-export const AddCityCard = (props: AddCityCard) => {
+export const AddCityCard = (props: AddCityCardPropsType) => {
 
     const [isOpen, setIsOpen] = useState(false)
 
