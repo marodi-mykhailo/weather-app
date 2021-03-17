@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# LIVE: https://marodi-mykhailo.github.io/weather-app/
 
 -------------------------------------------
 
