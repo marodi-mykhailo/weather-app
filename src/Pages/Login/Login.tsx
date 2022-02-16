@@ -6,6 +6,8 @@ import {loginUserTC, setUser} from "../../redux/userReducer/user.reducer";
 import {AppRootStateType} from "../../redux/store";
 import {Redirect} from 'react-router-dom';
 import {initializeAppTC} from "../../redux/app.reducer/app.reducer";
+import user from '../../user.json'
+
 
 export type LoginData = {
     email: string,
@@ -66,6 +68,9 @@ const Login = () => {
             <div className={`col`}>
                 <form className={`${styles.form}  mt-5`} onSubmit={onFormSubmit}>
                     <h3>Log in</h3>
+
+                    <div>Login: {user.email}</div>
+                    <div>Pass: {user.password}</div>
 
                     <div className="form-group">
                         <label>Email</label>
