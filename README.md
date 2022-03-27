@@ -3,6 +3,6 @@
 -------------------------------------------
 
 #LOGIN 
-admin@admin.com \
+admin@admin.com 
 #PASSWORD
 123456
